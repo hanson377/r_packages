@@ -4,6 +4,7 @@ Title: Simply a collection of functions I find myself referring to often
 Version: 0.1.0
 Author: Josh Hanson
 Maintainer: Josh Hanson <hanson377@gmail.com>
+Depends: R (>= 3.1.0), ggplot2, dplyr
 Description: same as above
 License: What license is it under?
 Encoding: UTF-8
