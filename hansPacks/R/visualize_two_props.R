@@ -1,7 +1,7 @@
-#' A visualization of two proportions using 5million samples
+#' A visualization of two proportions using a user-designated number of random samples from the beta distribution.
 #'
-#' This function allows you to quickly visualize the sampled beta distributions from two proportions
-#' @param love Do you love cats? Defaults to TRUE.
+#' This function allows you to quickly visualize the simulated beta distributions from two proportions
+#' @param yes
 #' @keywords bayes, ab test, proportion
 #' @export
 #' @examples
@@ -16,6 +16,7 @@ beta2 <- n2-alpha2
 
 beta1 <- data.frame(value=rbeta(trials,prior_alpha+alpha1,prior_beta+beta1))
 beta1$sample <- 'proportion 1'
+
 beta2 <- data.frame(value=rbeta(trials,prior_alpha+alpha2,prior_beta+beta2))
 beta2$sample <- 'proportion 2'
 
